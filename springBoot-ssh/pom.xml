@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.itcast</groupId>
+  <artifactId>springBoot-ssh</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <!-- 配置父级工程 -->
+  <parent>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-parent</artifactId>
+  <version>1.5.6.RELEASE</version>
+  </parent>
+  <!-- 配置全局属性 -->
+  <properties>
+  <!-- 更改jdk版本号 -->
+  	<java.version>1.7</java.version>
+  </properties>
+  
+  <!-- 配置依赖关系 -->
+  <dependencies>
+  	<dependency>
+  		<!-- 配置WEB启动器（内嵌tomcat，正和SpringMVC,整合jackson） -->
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-web</artifactId>
+  	</dependency>
+  	
+	<dependency>
+  		<!-- 配置热部署 -->
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-devtools</artifactId>
+  	</dependency>
+	
+	
+	<dependency>
+  		<!-- 配置spring-Data-JPA -->
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-data-jpa</artifactId>
+  	</dependency>
+	<dependency>
+  		<!-- MySql驱动 -->
+  		<groupId>mysql</groupId>
+  		<artifactId>mysql-connector-java</artifactId>
+  	</dependency>
+  	
+  	<dependency>
+  		<!-- c3p0 -->
+  		<groupId>com.mchange</groupId>
+  		<artifactId>c3p0</artifactId>
+  		<version>0.9.5.2</version>
+  	</dependency>
+  </dependencies>
+</project>
